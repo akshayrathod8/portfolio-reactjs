@@ -4,6 +4,7 @@ import './index.css'
 import { Navbar } from './components/Navbar';
 import { Home } from './components/sections/Home';
 import { LoadingScreen } from './components/LoadingScreen'
+import { About } from './components/sections/About';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -13,6 +14,7 @@ function App() {
      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{" "}
       <Navbar/>      
       <Home/>
+      <About/>
     </>
   )
 }
