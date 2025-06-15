@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import './index.css'
+import { Navbar } from './components/Navbar';
 import { LoadingScreen } from './components/LoadingScreen'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{" "}
+      <Navbar/>      
     </>
   )
 }
