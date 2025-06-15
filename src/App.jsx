@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Home } from './components/sections/Home';
 import { LoadingScreen } from './components/LoadingScreen'
 import { About } from './components/sections/About';
+import { Projects } from './components/sections/Projects';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -15,6 +16,7 @@ function App() {
       <Navbar/>      
       <Home/>
       <About/>
+      <Projects/>
     </>
   )
 }
